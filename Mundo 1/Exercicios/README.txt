@@ -1,0 +1,1 @@
+exercicios resolvendo, trataentos de str ou opções artimeticas

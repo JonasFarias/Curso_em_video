@@ -22,9 +22,7 @@ for c in range(1, 5):
         if sexo =='Mm' and idade > maior_idade_homem:
             nome_do_mais_velho = nome
     if sexo in 'Ff' and idade <= 20:
-        mulheres +=
-
-        1
+        mulheres += 1
 
 
 

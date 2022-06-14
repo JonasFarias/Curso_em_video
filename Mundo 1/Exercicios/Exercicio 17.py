@@ -4,7 +4,8 @@
 # - Quantas letras tem o primeiro nome.
 
 nome = str(input('Digite seu nome completo:')).strip()
-# colocando.strip ele ja deixa o nome cortado, removendo os espaços assim a contagem não contara com os esoaços vazios)
+# colocando.strip ele ja deixa o nome cortado, removendo os espaços assim a contagem não contara
+# com os esoaços vazios)
 nome_maiusculo = nome.upper()
 
 nome_minusculo = nome.lower()

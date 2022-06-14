@@ -1,4 +1,5 @@
-# faça um algoritimo que mostre o salario de um funcionario e o novo salario com aumento de 15%
+# faça um algoritimo que mostre o salario de um
+# funcionario e o novo salario com aumento de 15%
 
 salario = float(input('Qual o valor do salário:'))
 aumento = salario * 15 /100

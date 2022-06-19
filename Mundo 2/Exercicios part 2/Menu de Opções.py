@@ -47,6 +47,7 @@ while opcao != 7:
         print('Finalizando o programa...')
         sleep(3)
 
-
+    else:
+        print('Opção Invalida')
 
 

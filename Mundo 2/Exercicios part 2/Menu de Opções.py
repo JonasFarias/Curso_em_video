@@ -8,21 +8,45 @@
 
 Seu programa deverá realizar a operação solicitada em cada caso.'''
 
-
+from time import sleep
 
 numero1 = int(input('Valor 1: '))
 numero2 = int(input('Valor 2: '))
-
 opcao = 0
 
-while menu != True:
+while opcao != 7:
+    print('#' * 30)
+    print('''        [ 1 ] SOMAR
+        [ 2 ] MULTIPLICAR
+        [ 3 ] SUBTRAIR
+        [ 4 ] DIVIDIR
+        [ 5 ] MAIOR
+        [ 6 ] NOVOS NÚMEOS
+        [ 7 ] SAIR DO PROGRAMA''')
+
+    print('#' * 30)
+    opcao = int(input('Qual a sua opção: '))
     if opcao == 1:
-        print('{} + {} = {}'.format(numero1,numero2, (numero1 + numero2)))
-    print('[ 1 ] SOMAR: ')
-    print('[ 2 ] MULTIPLICAR: ')
-    print('[ 3 ] MAIOR: ')
-    print('[ 4 ] NOVOS NUMEROS: ')
-    print('[ 5 ] SAIR DO PROGRAMA: ')
-opcao = int(input('Qual a sua opção: '))
+        print('{} + {} = {}'.format(numero1, numero2, numero1 + numero2))
+    elif opcao == 2:
+        print('{} x {} = {}'.format(numero1, numero2, numero1 * numero2))
+    elif opcao == 3:
+        print('{} - {} = {}'.format(numero1, numero2, numero1 - numero2))
+    elif opcao == 4:
+        print('{} / {} = {}'.format(numero1, numero2, numero1 / numero2))
+    elif opcao == 5:
+        if numero1 > numero2:
+            print('O Maior numero é: {}'.format(numero1))
+        else:
+            print('O Maior numero é: {}'.format(numero2))
+    elif opcao == 6:
+        print('Digite novos valores!')
+        numero1 = (int(input('Valor 1: ')))
+        numero2 = (int(input('Valor 2: ')))
+    elif opcao == 7:
+        print('Finalizando o programa...')
+        sleep(3)
+
+
 
 

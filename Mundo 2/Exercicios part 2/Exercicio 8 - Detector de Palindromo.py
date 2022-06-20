@@ -1,4 +1,5 @@
-# Crie um programa que leia uma frase qualquer e diga se ela é um palíndromo, desconsiderando os espaços.
+# Crie um programa que leia uma frase qualquer e
+# diga se ela é um palíndromo, desconsiderando os espaços.
 
 # lê a frase
 frase = str(input('Digite muma frase: ')).strip().upper()

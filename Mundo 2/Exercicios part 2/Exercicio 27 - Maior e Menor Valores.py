@@ -27,6 +27,5 @@ while validacao not in 'Nn':
 
 media = soma / contador
 print('Você Digitou {} e a media foi de {}'.format(contador, media))
+print('O maior numero foi {} e o menor foi {}'.format(maior, menor))
 print('FIM')
-print(maior)
-print(menor)

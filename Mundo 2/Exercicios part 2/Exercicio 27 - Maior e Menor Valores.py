@@ -6,17 +6,27 @@ continuar a digitar valores.'''
 
 
 
-valor = 0
+
 validacao = 'Ss'
 soma = 0
 contador = 0
-
+maior = 0
+menor = 0
 while validacao not in 'Nn':
     valor = int(input('Digite um numero: '))
     validacao = str(input('Quer continuar Sim ou Não: ')).strip().upper()[0]
     contador += 1
     soma = soma + valor
+    if contador == 1:
+        maior = menor = valor
+    else:
+        if valor > maior:
+            maior = valor
+        if valor < menor:
+            menor = valor
 
 media = soma / contador
 print('Você Digitou {} e a media foi de {}'.format(contador, media))
 print('FIM')
+print(maior)
+print(menor)

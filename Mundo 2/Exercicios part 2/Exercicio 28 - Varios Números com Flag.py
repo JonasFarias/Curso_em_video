@@ -10,8 +10,8 @@ contador = soma = 0
 valor = 0
 while True:
     soma += valor
-    contador += 1
     valor = int(input('Digite um valor [999 para PARAR]: '))
     if valor == 999:
         break
+    contador += 1
 print(f'A soma dos {contador} valores, é de {soma}')

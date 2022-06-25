@@ -2,16 +2,13 @@
 um de cada vez, para cada valor digitado pelo usuário.
 O programa será interrompido quando o número solicitado for negativo.'''
 
-
-tabuada2 = 0
-numero = 0
-
-tabuada = int(input('Qual Tabuada você quer saber: '))
 while True:
-    while numero <= 9:
-        numero += 1
-        resultado = tabuada * numero
-        print(f'{tabuada} X {numero} = {resultado}')
-    tabuada = int(input('Teste: '))
+    print('-' * 30)
+    tabuada = int(input('Quer ver qual Tabuada: '))
+    print('-' * 30)
+    if tabuada < 0:
+        print('PROGRAMA TABUADA ENCERRADO!!')
+        break
+    for contador in range (1, 11):
+        print(f'{tabuada} X {contador} = {tabuada * contador}')
 
-print('OBRIGADO!')

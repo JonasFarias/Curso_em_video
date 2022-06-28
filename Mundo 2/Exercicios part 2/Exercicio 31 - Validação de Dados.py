@@ -17,20 +17,27 @@ print('=' * 20)
 total_pessoas_maiores = 0
 mulheres_menores = 0
 total_homens = 0
-
+sexo = ''
 while True:
     idade = int(input('Idade: '))
     if idade >= 18:
         total_pessoas_maiores += 1
-    sexo = str(input('Sexo [M/F}: ')).strip().upper()[0]
-    if sexo == 'M':
-        total_homens += 1
-    elif sexo == 'F' and idade < 18:
-        mulheres_menores += 1
-    opção = str(input('Quer continuar? [S/N]: ')).strip().upper()[0]
-    if opção == 'N':
+    sexo = ' '
+    while sexo not in 'MF':
+        sexo = str(input('Sexo [M/F]: ')).strip().upper()[0]
+        if sexo == 'M':
+            total_homens += 1
+        elif sexo == 'F' and idade < 18:
+            mulheres_menores += 1
+    opcao = ' '
+    while opcao not in 'SN':
+        opcao = str(input('Quer continuar? [S/N]: ')).strip().upper()[0]
+    if opcao == 'N':
         break
-print(f'Total de PESSOAS maiores de 18 : {total_pessoas_maiores}')
-print(f'Total de MULHERES menores de !8: {mulheres_menores}')
-print(f'Total de HOMENS cadastrado é de {total_homens}')
+
+print(f'Total de PESSOAS maiores é de {total_pessoas_maiores}')
+print(f'Total de HOMENS cadastrado foi de {total_homens}')
+print(f'Total de MULHERES menores é de {mulheres_menores}')
+
+
 

@@ -20,14 +20,14 @@ produto_mais_barato = ' '
 valor_mais_barato = 1000
 
 while True:
-
-
-    produto = str(input('PRODUTO: '))
+    produto = str(input('Nome do PRODUTO: '))
     preco = float(input('Valor do PRODUTO: '))
     total_compras = preco + total_compras
     if preco >= 1000:
         valor_mais_caro = preco
         total_produtos_mais_caros += 1
+    elif preco > valor_mais_caro:
+        valor_mais_barato = preco
     elif preco < valor_mais_barato:
         valor_mais_barato = preco
         produto_mais_barato = produto
@@ -35,10 +35,16 @@ while True:
     if opcao == 'N':
         break
 
-print(f'O TOTAL da compra R$: {total_compras}')
-print(f'{total_produtos_mais_caros}, custam mais de 1000 reais')
-print(f'O PRODUTO mais barato é : {produto_mais_barato}')
 
+print('=' * 40)
+print(f'TOTAL da compra R$: {total_compras}')
+print('-' * 40)
+print(f'{total_produtos_mais_caros}, PRODUTOS custam mais de 1000 reais')
+print('-' * 40)
+print(f'O PRODUTO mais barato: {produto_mais_barato}')
+print(f'Que custa R$: {valor_mais_barato}')
+print('=' * 40)
+print('OBRIGADO VOLTE SEMPRE!')
 
 
 

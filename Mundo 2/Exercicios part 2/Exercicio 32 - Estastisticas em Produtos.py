@@ -23,10 +23,7 @@ while True:
     produto = str(input('Nome do PRODUTO: '))
     preco = float(input('Valor do PRODUTO: '))
     total_compras = preco + total_compras
-    if preco >= 1000:
-        valor_mais_caro = preco
-        total_produtos_mais_caros += 1
-    elif preco > valor_mais_caro:
+    if preco >= 1000:_mais_caro:
         valor_mais_barato = preco
     elif preco < valor_mais_barato:
         valor_mais_barato = preco

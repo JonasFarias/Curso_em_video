@@ -1,7 +1,7 @@
 
 
 
-lanche = ('hambuguer', 'suco', 'sorvete', 'pizza')
+lanche = 'hambuguer', 'suco', 'sorvete', 'pizza'
 
 for comida in lanche:
     print(comida)

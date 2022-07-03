@@ -17,6 +17,7 @@ while True:
     if 0 <= numero <= 20:
         #para o programa
         break
+
         #só impreme se o valor não for correspondente
     print('Valor Invalido, tente novamente', end=' ')
 #impreze o indice da tupla de 0 a vinte

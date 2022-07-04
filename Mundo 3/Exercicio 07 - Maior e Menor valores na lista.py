@@ -6,10 +6,17 @@ suas respectivas posições na lista.'''
 
 valores = []
 for contador in range(0, 5):
-    valor = int(input('Digite um valor: '))
-    valores.append(valor)
-print(f'O maior valor digitado foi {max(valores)}, na posição ')
-print(f'O menor valor digitadoo foi {min(valores)}, na posição ')
-
+    valores.append(int(input(f'Digite um valor para posição {contador}: ')))
+print('=-=' * 20)
+print(f'O maior valor digitado foi {max(valores)}, na posição', end='')
+for indice, valor in enumerate(valores):
+    if valor == max(valores):
+        print(f' {indice}...', end='')
+print()
+print(f'O menor valor digitadoo foi {min(valores)}, na posição', end='')
+for indice, valor in enumerate(valores):
+    if valor == min(valores):
+        print(f' {indice}...', end='')
+print()
+print('=-=' * 20)
 print('ACABOU!')
-print(valores)

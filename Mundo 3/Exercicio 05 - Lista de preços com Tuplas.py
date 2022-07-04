@@ -26,6 +26,7 @@ for posicao in range(0, len(listagem)):
 
     else:
         #printa os preços formatados
-        print(f'R$: {listagem[posicao]:>5.2f}')
+        print(f'R$: {listagem[posicao]:>7.2f}')
+print('-' * 40)
 
 

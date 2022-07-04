@@ -18,4 +18,7 @@ numeros.sort(reverse=True)
 print(f'Os Numeros em ordem Decrescente são: {numeros}')
 numeros.sort()
 print(f'Os numeros em ordem Crescente são: {numeros}')
-
+if 5 in numeros:
+    print('O valor 5 costa na lista')
+else:
+    print('O Valor 5 não consta na lista')

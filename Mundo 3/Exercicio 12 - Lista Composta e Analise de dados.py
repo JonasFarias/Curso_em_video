@@ -11,6 +11,7 @@ while True:
     temporario.append(str(input('Nome: ')))
     temporario.append(float(input('Peso: ')))
     principal.append(temporario[:])
+    temporario.clear()
     resposta = str(input('Quer continuar [S/N]: ')).strip().upper()[0]
     if resposta in 'N':
         break

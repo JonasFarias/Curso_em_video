@@ -4,22 +4,35 @@ A) Quantas pessoas foram cadastradas.
 B) Uma listagem com as pessoas mais pesadas.
 C) Uma listagem com as pessoas mais leves.'''
 
+#lista temporaria criada para receber os dados
 temporario = []
+#lista principal, que sera usada para mostrar os dados
 principal = []
+#variavel para armazenar o maior peso
 maior = 0
+#variavel para armazenar o menor peso
 menor = 0
+
+#Lopping infinito para receber os dados
 while True:
+    #adiciona o nome da pessoa na lista temporaria
     temporario.append(str(input('Nome: ')))
+    #adiciona o peso na lista temporaria
     temporario.append(float(input('Peso: ')))
+    #verifica se é o primeiro valor a ser adicionado na lista
     if len(principal) == 0:
+        #atipui o valor da lista temporaria nas variaveis maior e menor
         maior = temporario[1]
         menor = temporario[1]
+        #verifica se os valores da lista são maiores ou menores para fazer a nova atribuição
     else:
         if temporario[1] > maior:
             maior = temporario[1]
         if temporario[1] < menor:
             menor = temporario[1]
+            #faz uma copia da lista temporaria para a principal
     principal.append(temporario[:])
+    #limpa a lista temporaria
     temporario.clear()
     resposta = str(input('Quer continuar [S/N]: ')).strip().upper()[0]
     if resposta in 'N':
